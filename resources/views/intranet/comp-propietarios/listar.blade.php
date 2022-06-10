@@ -51,15 +51,9 @@
 						<input type="text" id="id_afiliado" name="id_afiliado" value="" placeholder="Identificación" />
 					</div>
 					<div class="col-lg-4">
-						<input type="text" id="name_afiliado" name="name_afiliado" value="" placeholder="Nombre y/o Apellidos del Afiliado " />
+						<input type="text" id="name_afiliado" name="name_afiliado" value="" placeholder="Nmbres" />
 					</div>
-					<div class="col-lg-2">
-						<select data-placeholder="Tipo Afiliado" id="tipo_afiliacion" name="tipo_afiliacion" class="form-control field select-item " > 
-							<option value="99">- Mostrar Todos -</option>
-							<option value="51">Titular</option>
-							<option value="52">Beneficiario</option>
-						</select>  
-					</div>
+					 
 
 					<div class="col-lg-3 px-2 ">
 						<div id="filter_result" class="btn btn-outline-primary btn-sm rounded-pill px-3 mx-2 fw-bold  "> Filtrar Búsqueda </div>
