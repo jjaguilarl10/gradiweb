@@ -11,21 +11,23 @@ class CreateVehiculosTable extends Migration
      *
      * @return void
      */
-    public function up()
-    {
+    public function up(){
+
         Schema::create('vehiculos', function (Blueprint $table) {
             $table->id();
             $table->String('placa',7);
-            $table->String('color',20);
-            $table->String('marca',60)->nullable();
-            $table->String('tipo_vehiculo',20);
-            $table->unsignedBigInteger('conductor_id');
+            $table->String('color',60);
+            $table->unsignedBigInteger('marca_id')->nullable();
+            $table->String('tipo_vehiculo',60);
             $table->unsignedBigInteger('propietario_id');
             $table->timestamps(); 
+            $table->foreign('marca_id')->references('id')->on('marcas');
+            $table->foreign('propietario_id')->references('id')->on('propietarios');
             /*$table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             */
         });
+
     }
 
     /**
@@ -33,8 +35,9 @@ class CreateVehiculosTable extends Migration
      *
      * @return void
      */
-    public function down()
-    {
+    public function down(){
+
         Schema::dropIfExists('vehiculos');
+        
     }
 }

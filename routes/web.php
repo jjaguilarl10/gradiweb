@@ -20,6 +20,7 @@ Route::group(['prefix' => '/intranet' ], function(){
     # Opciones para los vehiculos
     Route::group(['prefix'=>'/vehiculos' ] ,function(){
         Route::get('/listar', ['uses' => 'Intranet\VehiculoController@listar' , 'as' => 'vehiculo.listar' ]);
+        Route::get('/nuevo', ['uses' => 'Intranet\VehiculoController@nuevo_vehiculo' , 'as' => 'vehiculo.nuevo']);
         Route::post('/agregar', ['uses' => 'Intranet\VehiculoController@create' , 'as' => 'vehiculo.add']);
     });
 

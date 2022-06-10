@@ -42,7 +42,7 @@
     <div class="_wlx row g-0 px-5 mt-2 "> 
 
 		<div class="row g-0 rounded bg-white mt-1 ">
-			<div class="col-lg-12 pt-4 p-3">
+			<div class="col-lg-12 pt-4 p-2">
 				<div class="row g-1">
 					<div class="col-lg-1 p-2">
 						Filtrar Por : 
@@ -52,18 +52,14 @@
 					</div>
 					<div class="col-lg-4">
 						<input type="text" id="name_afiliado" name="name_afiliado" value="" placeholder="Nmbres" />
-					</div>
-					 
-
+					</div> 
 					<div class="col-lg-3 px-2 ">
 						<div id="filter_result" class="btn btn-outline-primary btn-sm rounded-pill px-3 mx-2 fw-bold  "> Filtrar Búsqueda </div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-12 p-1">
-				<div id="filter_afiliaciones">
-					@include("intranet.comp-propietarios.filter-propietarios") 
-				</div>
+				<div id="filter_propietarios">@include("intranet.comp-propietarios.filter-propietarios")</div>
 			</div>
 		</div> 
 

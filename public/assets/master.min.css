@@ -102,35 +102,21 @@ body {background: var(--theme-background) !important; font-size: 13px;}
 
 
 /*--- Reloj ---*/
-.time-hours {
-    text-align: center;
-    font-size:22px; 
-    line-height: normal; 
-    display: inline-block; 
-    vertical-align: middle;
-    z-index: 5;
-    padding:5px 20px;
-    min-width:150px; 
-    height:46px; margin: 1px 0px;
-    color: black;
-    font-weight:700; 
-}
+.time-hours { text-align: center; font-size:22px;  line-height: normal;  display: inline-block;  vertical-align: middle; z-index: 5; padding:5px 20px; min-width:150px;  height:46px; margin: 1px 0px; color: black; font-weight:700; }
 .time-hours div{min-width:10px;display: inline-block;  }
 .time-hours .hour,
 .time-hours .minutes {min-width:20px; max-width:50px;padding:1px 2px;}
 .time-hours .seconds{width:50px; padding:1px 3px;font-size:12px; text-align:left;font-weight: 300;}
 
-
-
-/*--- tables ---*/
-.jtable { overflow: scroll; }
+/*-fromato tabla-*/
+#list-table{ overflow-x: auto !important; white-space: nowrap !important;  flex-direction: column; }
+.jtable { overflow:auto; }
 .jtable > table{ width:100%; }
 .jtable > table thead tr th,
 .jtable > table tbody tr td { white-space: nowrap; }
 .jtable > table thead tr th,
 .jtable > table tbody tr td { padding: 8px 12px; min-width:33px; max-width: 220px;}
 .jtable > table thead { background:#DAEFFE; font-size: 13px;line-height: 18px; color: #162d3d;}
-/* .jtable > table thead tr { box-shadow: inset 0 1px 0 0 #c1e4fe, inset 0 -1px 0 0 #c1e4fe; } */
 .jtable > table thead tr th { padding: 12px 5px; font-weight: 400; height:33px; }
 .jtable > table thead tr th:first-child,
 .jtable > table tbody tr td:first-child { padding: 12px 15px;}
@@ -144,7 +130,7 @@ body {background: var(--theme-background) !important; font-size: 13px;}
 .jtable ._stickyHead {position: sticky; position: -webkit-sticky; top: 0; z-index: 3; background:#DAEFFE;}
 .jtable ._stickyHead:first-child {left: 0; z-index: 4; }
 
-
+form label {color: #32536A; font-size: 12px;}
 .textControl{margin:3px 1.8px;line-height:10px; }
 input[type="text"],
 input[type="number"],
@@ -159,42 +145,30 @@ select{
     margin: 0;
     border-radius: 4px;
     border: 1px solid #c1e4fe;
-    background: transparent;
-    outline: none; 
-    height:33px; 
-    font-family: "poppins";
-    font-weight:500;
-    color: #162d3d;
-}
-.select2-container--default .select2-selection--single {
-    border: 1px solid #c1e4fe;
     border-radius: 4px;
     color: #162d3d;
+    background: transparent;
+    outline: none; 
+    height:33px;  
+    font-weight:500; 
 }
+.select2-container--default .select2-selection--single,
+select { border: 1px solid #c1e4fe !important; border-radius: 4px; color: #162d3d; font-size: 13px !important;}
 
 input[type="text"]:read-only,
 input[type="number"]:read-only,
 input[type="date"]:read-only,
-input[type="email"]:read-only
-{ 
-    background-color: #F0F4F7;
-}
-select {
-    /*z-index: -1;*/
-    border: 1px solid #888888;
-}
-
+input[type="email"]:read-only { background-color: #F0F4F7; }
+ 
 .item-selected:hover { background-color:#E8F0FE; border-radius: 3px; }
 .file-trash{ display: none; }
 .i-trash:hover .file-trash{ color: #000; display: block; cursor: pointer; }
-
 input[type="text"],
 input[type="number"],
 input[type="date"],
-input[type="email"], select {
-    letter-spacing: normal;
-    line-height: 12px; 
-    padding: 10px;
-}
+input[type="email"], select { letter-spacing: normal; line-height: 12px;  padding: 10px;}
 textarea{min-height:80px; border: 1px solid #c1e4fe !important; resize: none; }
-
+.modal-header {
+    background: var(--bg-blue-dark); color: #FFF; padding: 7px 10px !important;
+}
+.nofound-results{ padding: 10px 5px; font-size:13px; }

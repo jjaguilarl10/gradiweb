@@ -5,9 +5,18 @@ aaa
 		<div id="mainnav-menu" data-value="0" class=" _sidebarMenu ">
 
             <div class="item-list-menu " >
-                <a href="#" class=" item-list-menu" >
-                    <i class="icofont-search icon"></i>
-                    <div class="lbl_item_menu " > Validar Clientes </div> 
+                <a href="{{route('intranet.dashboard')}}" class=" item-list-menu" >
+                    <div class="lbl_item_menu " >Dashboard</div> 
+                </a>
+            </div> 
+            <div class="item-list-menu " >
+                <a href="{{route('vehiculo.listar')}}" class=" item-list-menu" >
+                    <div class="lbl_item_menu " >Información Vehiculos </div> 
+                </a>
+            </div>
+            <div class="item-list-menu " >
+                <a href="{{route('propietarios.listar')}}" class=" item-list-menu" >
+                    <div class="lbl_item_menu " >Información Propietarios </div> 
                 </a>
             </div> 
 			 
