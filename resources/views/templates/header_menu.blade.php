@@ -19,7 +19,7 @@
 	      		<i class="icofont-alarm fs-4"></i>
 	      	</li>
 	        <li class="nav-item dropdown ">
-				<a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				<a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black !important">
 				    < usuario logeado >
 				</a>
 	          	<ul class="dropdown-menu dropdown-menu-end dropdown-menu-white text-dark border-0 rounded-0 " aria-labelledby="navbarDarkDropdownMenuLink px-2" style="font-size:12px;border-radius: 6px;box-shadow: 0 0 17px 0 rgba(23,50,68,.17);border-radius: 6px;z-index: 1051; border:1px solid black ">
@@ -34,8 +34,7 @@
 		          	</li>
 		          	<li class=""><hr class="dropdown-divider"></li>
 		          	<div class="items-options" > 
-						<li class="p-2 border-dark  p-2 _jlmodalPasswordAccount"> <b class="icofont-key"></b> &nbsp; Cambiar Contraseña </li> 
-						<li class="p-2 "><a class="border-dark  p-2" href="#"><i class="icofont-logout"></i> &nbsp; Cerrar sesión</a></li>
+						<li class="p-2 "><a class="border-dark  p-2" href="{{route('auth.logout')}}"><i class="icofont-logout"></i> &nbsp; Cerrar sesión</a></li>
 					</div>
 
 	        	</ul>
@@ -50,9 +49,5 @@
 	
 <script>
 	Reloj();
-
-   
 </script>
-
 </header>
-<div class=" p-1 " id="cmpmoptionsP_"></div>

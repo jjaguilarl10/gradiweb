@@ -16,11 +16,10 @@ class CreatePropietariosTable extends Migration{
             $table->id();
             $table->String('identificacion',20);
             $table->String('primer_nombre',60);
-            $table->String('segundo_nombre',60);
+            $table->String('segundo_nombre',60)->nullable();
             $table->String('apellidos',100);
-            $table->String('direccion',160);
-            $table->String('celular',20);
-            $table->String('ciudad',50);
+            $table->String('direccion',160)->nullable();
+            $table->String('celular',20)->nullable();
             $table->timestamps();
         });
     }

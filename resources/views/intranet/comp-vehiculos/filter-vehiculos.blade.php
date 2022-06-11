@@ -1,4 +1,4 @@
-<div class="jtable p-3" style="min-height:55vh">
+<div class="jtable p-3" style="min-height:50vh">
     <table id="list-table">
         <thead>
             <tr><th>#</th><th>Placa</th> <th>Color</th><th>Marca</th><th>Tipo Vehiculo</th><th>Nombre Propietario</th><th></th></tr>

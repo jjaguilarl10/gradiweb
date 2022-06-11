@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Hash, Auth, Session, Redirect;
+
 
 class AuthController extends Controller{
     
@@ -20,6 +22,12 @@ class AuthController extends Controller{
         ->with([ ]);
     }
 
+    public function logout(){
+        Session::flush();
+        return Redirect::to('auth/login');
+
+    }
+    
     
 
 

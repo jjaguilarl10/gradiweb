@@ -53,3 +53,27 @@ let jModals = function jModalContent ( p ){
 		alert("parametros del modal estan vacios");
 	}
 }
+
+let sform = function save_form(formData,url,method){ 
+    $.ajax({
+        url: path_+url,
+        type: method,
+        data: formData,
+        success: function (response) { 
+            if(response['code'] == 200){ 
+
+                WjAlert(response['message'],'s');
+                if(response['url'] != ""){
+                    top.location.href = (path_+response.url); 
+                }else{
+                }
+
+            }else{
+                WjAlert(response['message'],'e');
+            }
+        },
+        cache: false,
+        contentType: false,
+        processData: false
+    });
+}

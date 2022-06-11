@@ -10,15 +10,28 @@ aaa
                 </a>
             </div> 
             <div class="item-list-menu " >
+                <a href="{{route('propietarios.listar')}}" class=" item-list-menu" >
+                    <div class="lbl_item_menu " >Administrar Propietarios </div> 
+                </a>
+            </div> 
+            <div class="item-list-menu " >
                 <a href="{{route('vehiculo.listar')}}" class=" item-list-menu" >
-                    <div class="lbl_item_menu " >Información Vehiculos </div> 
+                    <div class="lbl_item_menu " >Administrar Vehiculos </div> 
                 </a>
             </div>
             <div class="item-list-menu " >
-                <a href="{{route('propietarios.listar')}}" class=" item-list-menu" >
-                    <div class="lbl_item_menu " >Información Propietarios </div> 
+                <a href="{{route('vehiculo.reporte.marcas')}}" class=" item-list-menu" >
+                    <div class="lbl_item_menu " >Reporte Vehiculos x Marcas</div> 
                 </a>
-            </div> 
+            </div>
+
+            <div class="mt-3 p-3 px-1 pb-1 text-white">[ 2 ] Validador Js</div>
+            <div class="item-list-menu " >
+                <a href="{{route('validador.json')}}" class=" item-list-menu" >
+                    <div class="lbl_item_menu " >Validar Js</div> 
+                </a>
+            </div>
+            
 			 
 		</div>
 	</div>
