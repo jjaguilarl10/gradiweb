@@ -9,10 +9,12 @@ Con el fin de que se puedan realizar la descarga y pruebas respectivas para el p
 
 1-  Realizar una actualización del archivo composer para descargar todos los requerimientos necesarios para el proyecto desde el archivo composer.json
 
-2 - Correr las migraciones que permitira crear las tablas necesarios para el proyecto y sus prueba
+2-  Correr o crear de ser necesario el archivo .env desde el archivo de .env.copia, con el fin de poder tener actualizado y establecer la configuración de la bd
+
+3 - Correr las migraciones que permitira crear las tablas necesarios para el proyecto y sus prueba
 php artisan migrate
 
-2 - Correr los seeders que nos permitira cargar unos datos necesarios en algunas de las tablas con el fin de realizar las pruebas.
+4 - Correr los seeders que nos permitira cargar unos datos necesarios en algunas de las tablas con el fin de realizar las pruebas.
 
 php artisan db:seed
 
@@ -33,7 +35,10 @@ En el directorio de resources/views se tiene tres directorio descriminados de la
 
 views/auth      : contiene los archivos del proceso de autenticacion login para acceder al sistema
 views/intranet  : Seria el directorio que contiene todos los archivos/modulos que haran parte del proyecto
-views/templates : Aqui estableci los archvos maestros del diseño o plantillas que se necesitan de forma global para el proyecto, y asi poder separar algunos de los componentes que hacen parte del contenedor procipal de cada o de todos los modulos del sistema.
+views/templates : Aqui estableci los archvos maestros del diseño o plantillas que se necesitan de forma global para el proyecto, y asi poder separar algunos de los componentes que hacen parte del contenedor principal de cada o de todos los modulos del sistema.
+
+
+para el modulo/opción de reportes se queria hacer un modulo un poco mas configurables es decir que se pudiera establecer las columnas y filtros que se desea mostrar para el reporte y asi fuera mas dinamico pero no queria depornto hacer mas de la cuenta y depronto me fuera afectar igual se queria generar el archivo de excel.
 
 
 
