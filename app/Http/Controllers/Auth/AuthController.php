@@ -18,6 +18,12 @@ class AuthController extends Controller{
     
     # validación de acceso
     public function authorization(Request $request){
+    
+        $this->validate($request, [ 'identificacion' => 'required', 'password' => 'required', ]);
+        return $credentials_ = $request->only('identificacion', 'password');
+        return $users_ = User::where('identificacion', $request->identificacion)->where('idPerfil',2)->first();
+
+        
         return Redirect::to('intranet/dashboard');
     }
 
