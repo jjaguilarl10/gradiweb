@@ -5,16 +5,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () { return view('welcome'); });
 
 # Login  
-Route::get('/logout', ['uses' => 'Auth\AuthController@logout', 'as' => 'auth.logout']);
 Route::group(['prefix' => '/auth' ], function(){
 
     # return view('welcome');
     Route::get('/login',['uses'=>'Auth\AuthController@login','as'=>'auth.login']);
     Route::post('/validate',['uses'=>'Auth\AuthController@authorization','as'=>'auth.authorize']);
-
+    Route::get('/logout', ['uses' => 'Auth\AuthController@logout', 'as' => 'auth.logout']);
+    
 });
 
-Route::group(['prefix' => '/intranet' ], function(){
+Route::group(['prefix' => '/intranet', 'middleware' => 'auth' ], function(){
 
     Route::get('/dashboard', ['uses' => 'Intranet\DashboardController@index' , 'as' => 'intranet.dashboard' ]);
 

@@ -20,16 +20,16 @@
 	      	</li>
 	        <li class="nav-item dropdown ">
 				<a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black !important">
-				    < usuario logeado >
+				{{ Auth::User()->name }} 
 				</a>
 	          	<ul class="dropdown-menu dropdown-menu-end dropdown-menu-white text-dark border-0 rounded-0 " aria-labelledby="navbarDarkDropdownMenuLink px-2" style="font-size:12px;border-radius: 6px;box-shadow: 0 0 17px 0 rgba(23,50,68,.17);border-radius: 6px;z-index: 1051; border:1px solid black ">
 		          	
 		          	<li class="p-3 px-4 fs-6 ln-1 "> 
 		          		<div style="max-width:270px; padding-left: 10px;font-size: 14px;">
 		          			<div class="fw-bold text-truncate px-2" >
-		          				Usuario Registrado Modulo
+							  {{ Auth::User()->name }} 
 		          			</div>
-		          			<span class=" px-2 " style="font-size:12px;">correo@micorreo.com.co</span>
+		          			<span class=" px-2 " style="font-size:12px;"> {{ Auth::User()->email }} </span>
 		          		</div>
 		          	</li>
 		          	<li class=""><hr class="dropdown-divider"></li>
