@@ -39,4 +39,29 @@
 	</div>
 	</div>
 
+	<div class="_wlx row g-0 px-5 mt-2 ">
+		<div class="row g-1 mb-2">
+
+		<div class="col-lg-3 col-md-3 col-6 ">
+          <div class="rounded bg-white p-3">
+            <label class="fw-normal">Total <a href="{{route('propietarios.listar')}}">Propietarios</a></label>
+            <div class="fs-4 p-2 fw-bold">
+				{{ $resources['propietarios']}}
+            </div>
+          </div>
+        </div>
+
+		<div class="col-lg-3 col-md-3 col-6 ">
+          <div class="rounded bg-white p-3">
+            <label class="fw-normal">Total <a href="{{route('vehiculo.listar')}}">Vehiculos</a></label>
+            <div class="fs-4 p-2 fw-bold">
+				{{ $resources['vehiculos']}}
+            </div>
+			
+          </div>
+        </div>
+
+	</div>
+	</div> 
+
 @endsection

@@ -5,11 +5,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () { return view('welcome'); });
 
 # Login  
+Route::get('/logout', ['uses' => 'Auth\AuthController@logout', 'as' => 'auth.logout']);
 Route::group(['prefix' => '/auth' ], function(){
 
     # return view('welcome');
     Route::get('/login',['uses'=>'Auth\AuthController@login','as'=>'auth.login']);
-    Route::get('/logout', ['uses' => 'Auth\AuthController@logout', 'as' => 'auth.logout']);
     Route::post('/validate',['uses'=>'Auth\AuthController@authorization','as'=>'auth.authorize']);
 
 });

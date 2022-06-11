@@ -18,8 +18,7 @@ class AuthController extends Controller{
     
     # validación de acceso
     public function authorization(Request $request){
-        return view('intranet.dashboard')
-        ->with([ ]);
+        return Redirect::to('intranet/dashboard');
     }
 
     public function logout(){
